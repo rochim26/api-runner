@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 const Home = () => {
-  const [apiUrl, setApiUrl] = useState("http://localhost:3000/api/hello");
+  const [apiUrl, setApiUrl] = useState(
+    "https://api-runner.vercel.app/api/hello"
+  );
   const [jsonResult, setJsonResult] = useState("");
 
   const handleApiUrlChange = (event) => {
